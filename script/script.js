@@ -58,7 +58,6 @@ for (let smoothLink of smoothLinks) {
     });
 };
 
-
 // Поиск элементов отправки формы записи
 const registrationOrder = document.querySelector('.registration__order');
 const popUp = document.querySelector('.pop-up');
