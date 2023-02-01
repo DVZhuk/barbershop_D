@@ -1,0 +1,213 @@
+@media (min-width: 0) {
+  .features {
+    position: relative;
+    background-color: #242424;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+
+  }
+  .stats__header {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .stats__slogan {
+    margin: 0 auto;
+    padding-top: 27px;
+    width: 182px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .stats__intro {
+    margin: 0 auto;
+    margin-top: 13px;
+    padding-bottom: 28px;
+    width: 280px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .stats__list {
+    margin: 0;
+  }
+  .stats__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .stats__number {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+
+    sup{
+      position: static;
+      margin-left: 5px;
+      vertical-align: baseline;
+      font-size: inherit;
+    }
+  }
+  .stats__description {
+    margin: 0;
+    text-align: right;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .item--1 {
+    background-color: fade(#2D2682, 5%);
+  }
+  .item--2, .item--4 {
+    background-color: #353535;
+  }
+  .item--3 {
+    background-color: fade(#2D2682, 5%);
+  }
+  .stats__legend {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .stats__legend--bottom {
+    color: fade(#ffffff, 30%);
+    width: 220px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: @mobile-width-max) {
+  .stats__legend--top {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features{
+    background-color: #353535;
+    height: 900px;
+  }
+  .features__stats {
+    position: relative;
+    margin: 0 64px;
+    top: -179px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 20px;
+      left: -16px;
+      border: 16px solid transparent;
+      border-left-color: #ffffff;
+      transform: rotate(-45deg);
+    }
+  }
+  .triangle {
+    position: absolute;
+
+  }
+  .stats__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 179px;
+  }
+  .stats__slogan{
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 34px;
+    width: 205px;
+    text-align: left;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: none;
+  }
+  .stats__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .stats__legend--top {
+    margin-top: 17px;
+    padding-bottom: 37px;
+    padding-left: 34px;
+    color: fade(#000000, 30%)
+  }
+  .stats__intro {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-left: 34px;
+    width: 205px;
+    text-align: left;
+  }
+  .stats__item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-left: 34px;
+    padding-bottom: 30px;
+  }
+  .stats__number {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .stats__description {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 12px;
+  }
+  .stats__description br {
+    display: none;
+  }
+  .item--1, .item--4 {
+    background-color: fade(#ffffff, 5%);
+  }
+  .item--2 {
+    background-color: #4E4E4E;
+  }
+  .item--3 {
+    background-color: #353535;
+  }
+  .stats__legend--bottom {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    height: 618px;
+  }
+  .features__stats {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    top: -159px;
+    margin: 0 120px;
+  }
+  .stats__header {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+  }
+  .stats__slogan {
+    padding-top: 32px;
+  }
+  .stats__intro {
+    padding-top: 38px;
+  }
+  .item--1, .item--4 {
+    background-color: #3F3F3F;
+  }
+  .item--2 {
+    background-color: #4D4D4D;
+  }
+  .stats__legend--top {
+    margin-top: auto;
+    padding-bottom: 30px;
+  }
+}
