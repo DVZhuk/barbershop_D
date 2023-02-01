@@ -18,8 +18,6 @@ for (let i = 0; i < inputPlaces.length; i ++) {
             inputPlaces[i].setCustomValidity('');
         };
     });
-
-    
 };
 
 })();
