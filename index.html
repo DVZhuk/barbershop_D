@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Барбершоп Бородинский</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='preload' href='fonts/PTSans-Narrow.woff2' as='font' type="font/woff2" crossorigin>
+    <link rel='preload' href='fonts/PTSans-NarrowBold.woff2' as='font' type="font/woff2" crossorigin>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="script/swiper-bundle.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="toggle-icon"></span>
+          <span class="vissually-hidden">Открыть меню</span>
+        </button>
+        <div class="container container--navigation">
+          <ul class="navigation__link">
+            <li class="navigation__link-item item-current"><a>Главная</a></li>
+            <li class="navigation__link-item"><a href="photo.html">Наши работы</a></li>
+            <li class="navigation__link-item"><a href="form.html">Записаться</a></li>
+            <li class="navigation__link-item"><a href="#contact">Контакты</a></li>
+            <li class="navigation__link-item"><a href="https://htmlacademy.ru" target="_blank">HTML ACADEMY</a></li>
+          </ul>
+          <button class="navigation__login navigation__link-item">
+            <svg class="navigation__login-icon" width="16" height="16"
+            viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polygon
+            points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" />
+            <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" />
+            </svg>
+            Войти
+          </button>
+          <p class="admin-name admin-name--novisible">admin</p>
+        </div>
+      </nav>
+      <div class="logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="logo__image" src="img/logotype-mobile.svg" alt="Логотип" width="226px">
+        </picture>
+      </div>
+      <section class="login__form login__form--closed">
+        <h2 class="heading login__heading">Личный кабинет</h2>
+        <p class="login__text">Введите свой логин и пароль, чтобы войти</p>
+        <form class="login__order" action="/login" method="login">
+          <div class="login__input">
+            <input class="registration__text login__input-text" type="text" name="login" placeholder="Логин" minlength="5" maxlength="18">
+            <input class="registration__text login__input-text" type="password" name="password" placeholder="Пароль" minlength="8">
+          </div>
+          <div class="login__extra">
+            <input class="checkbox-input" type="checkbox" name="remember" id="remember">
+            <label class="login__check services__checkbox" for="remember">
+              Запомните меня
+              <div class="checkbox__mark"></div>
+            </label>
+            <a class="extra__forgot-password" href="#">Я забыл пароль!</a>
+          </div>
+          <div class="login__buttons">
+            <input class="login__button-log form-button" type="submit" name="log-in" value="Войти">
+            <button class="login__button-close" type="button" name="button">Закрыть</button>
+          </div>
+        </form>
+      </section>
+    </header>
+    <main class="main">
+      <h1 class="vissually-hidden">Барбершоп "Бородинский"</h1>
+      <section class="features">
+        <div class="features__stats">
+          <header class="stats__header">
+            <h2 class="vissually-hidden">
+              Статистика Барбершопа
+            </h2>
+            <p class="stats__slogan">
+              Стрижка у нас это выгодно!
+            </p>
+            <p class="stats__intro">
+              Мужская стрижка требует точного
+              подхода. Обратимся к статистике:
+            </p>
+            <p class="stats__legend stats__legend--top">
+              <small>
+                * - приведённые данные ложь
+              </small>
+            </p>
+          </header>
+          <dl class="stats__list">
+            <div class="stats__item item--1">
+              <dt class="stats__number">
+                1500<sup>*</sup>
+              </dt>
+              <dd class="stats__description">
+                рублей<br> вложений
+              </dd>
+            </div>
+            <div class="stats__item item--2">
+              <dt class="stats__number">
+                7 200
+              </dt>
+              <dd class="stats__description">
+                секунд<br> времени мастера
+              </dd>
+            </div>
+            <div class="stats__item item--3">
+              <dt class="stats__number">
+                90 000
+              </dt>
+              <dd class="stats__description">
+                постриженных<br> волос
+              </dd>
+            </div>
+            <div class="stats__item item--4">
+              <dt class="stats__number">
+                500 000<sup>*</sup>
+              </dt>
+              <dd class="stats__description">
+                лайков и<br> комплиментов
+              </dd>
+            </div>
+          </dl>
+          <small class="stats__legend stats__legend--bottom">
+            * - приведённые данные ложь
+          </small>
+        </div>
+        <div class="features__swiper">
+          <dl class="features__about">
+            <h2 class="vissually-hidden">Особенности Барбершопа</h2>
+            <div class="about__item about__item--1">
+              <dt class="features__heading">
+                Быстро
+              </dt>
+              <dd class="features__description">
+                Мы делаем свою работу быстро! Два часа пролетят незаметно
+                и вы — счастливый обладатель стильной стрижки-минутки
+              </dd>
+            </div>
+            <div class="about__item about__item--2">
+              <dt class="features__heading">
+                Круто
+              </dt>
+              <dd class="features__description">
+                Забудьте, как вы стриглись раньше. Мы сделаем из вас
+                звезду футбола или кино. Во всяком случае внешне.
+              </dd>
+            </div>
+            <div class="about__item about__item--3">
+              <dt class="features__heading">
+                Дорого
+              </dt>
+              <dd class="features__description">
+                Наши мастера — профессионалы своего дела не могут
+                стоить дёшево. К тому же, разве цена не даёт определённый
+                статус?
+              </dd>
+            </div>
+          </dl>
+          <div class="features__pagination swiper-pagination"></div>
+        </div>
+        <svg class="bottom-border bottom-border--features" viewBox="0 0 320 34"
+         preserveAspectRatio="none">
+          <polygon points="0,0 160,32 320,0 320,34 0,34" />
+        </svg>
+      </section>
+      <section class="news-reviews">
+        <div class="news-reviews__news">
+          <h2 class="news__heading heading">Новости и акции</h2>
+          <div class="news__item">
+            <time class="news__time" datetime="2022-09-29"><p class="time__number">29</p> сент
+              <svg class="news__bottom-border" viewBox="0 0 320 34"
+              preserveAspectRatio="none" height="10px" width="52px">
+                <polygon points="0,0 160,30 320,0 320,34 0,34" fill="#ffffff"/>
+              </svg>
+            </time>
+            <a class="news__description">Нам наконец завезли Ягермайстер!
+              Теперь вы можете пропусить
+               стаканчик во время стрижки.
+            </a>
+          </div>
+          <div class="news__item mobile-last">
+            <time class="news__time" datetime="2022-09-19"><p class="time__number">19</p> сент
+              <svg viewBox="0 0 320 34" class="news__bottom-border"
+              preserveAspectRatio="none" height="10px" width="52px">
+                <polygon points="0,0 160,30 320,0 320,34 0,34" fill="#ffffff"/>
+              </svg>
+            </time>
+            <a class="news__description">В нашей команде пополнение, Борис
+               «Бритва» Стригунец, пополнил наши стройные ряды. Спешите
+               записаться!
+            </a>
+          </div>
+          <div class="news__item news__item--mobile-hidden">
+            <time class="news__time" datetime="2022-09-09"><p class="time__number">9</p> сент
+              <svg viewBox="0 0 320 34" class="news__bottom-border"
+              preserveAspectRatio="none" height="10px" width="52px">
+                <polygon points="0,0 160,30 320,0 320,34 0,34" fill="#ffffff"/>
+              </svg>
+            </time>
+            <a class="news__description">Все дорожает, а наши стрижки нет!
+               Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
+            </a>
+          </div>
+          <a class="news__button button disabled" href="#">
+            Показать всё
+          </a>
+        </div>
+        <div class="news-reviews__reviews swiper">
+          <header class="reviews__header header--position">
+            <h2 class="reviews__heading heading">Отзывы о нас</h2>
+            <a class="reviews__button button
+            reviews__button--mobile-hidden disabled" href="#">
+            Оставить свой
+            </a>
+          </header>
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__item-wrapper">
+                <img class="reviews__photo" src="img/user__photo-1.jpg"
+                width="249" height="160" alt="Аватар пользователя">
+                <p class="reviews__item-name">Трэвис Баркер</p>
+                <p class="reviews__item-comment">Спасибо за лысину! Был проездом
+                в Москве, заскочил побриться, чтобы было видно новую татуировку
+                </p>
+              </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__item-wrapper">
+                <img class="reviews__photo" src="img/user__photo-2.jpg"
+                width="249" height="160" alt="Аватар пользователя">
+                <p class="reviews__item-name">Александр Бородинский</p>
+                <p class="reviews__item-comment">Великолепный барбершоп,
+                особобенно название!
+                </p>
+              </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__item-wrapper">
+                <img class="reviews__photo" src="img/user__photo-3.jpg"
+                width="249" height="160" alt="Аватар пользователя">
+                <p class="reviews__item-name">Инакентий Баратеон</p>
+                <p class="reviews__item-comment">Пришёл, сказал: "Постричь
+                по-короче, ну и чтоб красиво было", получилось действительно
+                коротко и красиво! 10/10</p>
+              </div>
+            </li>
+          </ul>
+          <div class="reviews__arrow--left swiper-button-prev"></div>
+          <div class="reviews__arrow--right swiper-button-next"></div>
+          <div class="reviews__pagination swiper-pagination"></div>
+        </div>
+        <svg class="bottom-border bottom-border--news-reviews" viewBox="0 0 320 34"
+         preserveAspectRatio="none">
+          <polygon points="0,0 160,32 320,0 320,34 0,34" />
+        </svg>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer__contacts">
+        <h2 class="footer__contacts__heading">Барбершоп Бородинский</h2>
+        <p class="footer__contacts__adress">г.Москва, ул. Большая Конюшенная 19/8</p>
+        <p class="footer__contacts__number-prev">Тел.:</p>
+        <a class="footer__contacts__number button button--border" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="footer__developer">
+        <p class="footer__developer-text">Разработано по макету:</p>
+        <a class="footer__developer-link button button--border" href="https://htmlacademy.ru" target="_blank">Html Academy</a>
+      </div>
+      <ul class="footer__frendly-list">
+        <li class="frendly-list__item button--border"><a class="item--vk" href="https://vk.com" target="_blank">Вконтакте</a></li>
+        <li class="frendly-list__item button--border"><a class="item--youtube" href="https://www.youtube.com" target="_blank">Ютуб</a></li>
+        <li class="frendly-list__item button--border"><a class="item--telegram" href="https://web.telegram.org" target="_blank">Телеграм</a></li>
+      </ul>
+    </footer>
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="script/swiper-script.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/validityLogin-script.js"></script>
+    <script src="script/login-script.js"></script>
+  </body>
+</html>

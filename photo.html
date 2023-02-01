@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Наши работы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='preload' href='fonts/PTSans-Narrow.woff2' as='font' type="font/woff2" crossorigin>
+    <link rel='preload' href='fonts/PTSans-NarrowBold.woff2' as='font' type="font/woff2" crossorigin>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header class="header header--photo">
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="toggle-icon"></span>
+          <span class="vissually-hidden">Открыть меню</span>
+        </button>
+        <div class="container container--navigation">
+          <ul class="navigation__link">
+            <li class="navigation__link-item"><a href="index.html">Главная</a></li>
+            <li class="navigation__link-item item-current"><a>Наши работы</a></li>
+            <li class="navigation__link-item"><a href="form.html">Записаться</a></li>
+            <li class="navigation__link-item"><a href="#contact">Контакты</a></li>
+            <li class="navigation__link-item"><a href="https://htmlacademy.ru" target="_blank">HTML ACADEMY</a></li>
+          </ul>
+          <button class="navigation__login navigation__link-item">
+            <svg class="navigation__login-icon" width="16" height="16"
+            viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polygon
+            points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" />
+              <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" />
+            </svg>
+            Войти
+          </button>
+          <p class="admin-name admin-name--novisible">admin</p>
+        </div>
+      </nav>
+      <div class="logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="logo__image" src="img/logotype-mobile.svg" alt="Логотип" width="226px">
+        </picture>
+      </div>
+      <svg viewBox="0 0 320 34" class="bottom-border bottom-border--header"
+       preserveAspectRatio="none">
+        <polygon points="0,0 160,32 320,0 320,34 0,34" />
+      </svg>
+      <section class="login__form login__form--closed">
+        <h2 class="heading login__heading">Личный кабинет</h2>
+        <p class="login__text">Введите свой логин и пароль, чтобы войти</p>
+        <form class="login__order" action="/login" method="login">
+          <div class="login__input">
+            <input class="registration__text login__input-text" type="text" name="login" placeholder="Логин" minlength="5" maxlength="18">
+            <input class="registration__text login__input-text" type="password" name="password" placeholder="Пароль" minlength="8">
+          </div>
+          <div class="login__extra">
+            <input class="checkbox-input" type="checkbox" name="remember" id="remember">
+            <label class="login__check services__checkbox" for="remember">
+              Запомните меня
+              <div class="checkbox__mark"></div>
+            </label>
+            <a class="extra__forgot-password" href="#">Я забыл пароль!</a>
+          </div>
+          <div class="login__buttons">
+            <input class="login__button-log form-button" type="submit" name="log-in" value="Войти">
+            <button class="login__button-close" type="button" name="button">Закрыть</button>
+          </div>
+        </form>
+      </section>
+    </header>
+    <main>
+      <section class="works">
+        <header class="works__header header--position">
+          <h2 class="works_heading heading">Наши работы</h2>
+          <a class="works__button button" href="index.html">На главную</a>
+        </header>
+        <ul class="works__list">
+          <li class="works__item item--best">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/works_photo-1.jpg">
+              <img class="works__item-photo item--best-photo" src="img/works_photo-mobile-1.jpg" alt="Фото клиента" width="280px">
+            </picture>
+            <div class="works__item__reviews item__reviews--best">
+              <div class="item__reviews">
+                <p class="item__reviews-name">Лжепётр Мчиславский</p>
+                <p class="item__reviews-comment">Где я только не стригся, но так как делаете
+                   это вы — не умеет никто другой! Еще раз спасибо
+                    и до скорого!
+                </p>
+              </div>
+              <ul class="item__services">
+                <li class="service service--scissors">Стрижка</li>
+                <li class="service service--beard">Бритье</li>
+                <li class="service service--mustache">Усы</li>
+              </ul>
+            </div>
+            <div class="marker-best">
+              <p class="marker-best__text">Работа месяца</p>
+              <svg class="marker-best__border" viewBox="0 0 10 50"
+               preserveAspectRatio="none">
+                <polygon points="0,0 0,50 10,50 2,25 10,0" />
+              </svg>
+            </div>
+          </li>
+          <li class="works__item">
+            <picture>
+              <source media="(min-width: 767px)" srcset="img/works_photo-2.jpg">
+              <img class="works__item-photo" src="img/works_photo-mobile-2.jpg" alt="Фото клиента" width="280px">
+            </picture>
+            <div class="works__item__reviews">
+              <div class="item__reviews">
+                <p class="item__reviews-name">Саша Мальцев</p>
+                <p class="item__reviews-comment">Попросил омолодить и омолодили!
+                  Кто теперь скажет, что мне 45?
+                </p>
+              </div>
+              <ul class="item__services">
+                <li class="service service--scissors">Стрижка</li>
+              </ul>
+            </div>
+          </li>
+          <li class="works__item">
+            <picture>
+              <source media="(min-width: 767px)" srcset="img/works_photo-3.jpg">
+              <img class="works__item-photo" src="img/works_photo-mobile-3.jpg" alt="Фото клиента" width="280px">
+            </picture>
+            <div class="works__item__reviews">
+              <div class="item__reviews">
+                <p class="item__reviews-name">Владимир Иваныч</p>
+                <p class="item__reviews-comment">К зимнему сезону - готов!</p>
+              </div>
+              <ul class="item__services">
+                <li class="service service--beard">Борода</li>
+                <li class="service service--mustache">Усы</li>
+              </ul>
+            </div>
+          </li>
+          <li class="works__item">
+            <picture>
+              <source media="(min-width: 767px)" srcset="img/works_photo-4.jpg">
+              <img class="works__item-photo" src="img/works_photo-mobile-4.jpg" alt="Фото клиента" width="280px">
+            </picture>
+            <div class="works__item__reviews">
+              <div class="item__reviews">
+                <p class="item__reviews-name">Винстон Синий</p>
+                <p class="item__reviews-comment">Как только зарастаю и волосы начинают
+                   мешать видеть — бегом в Бородинский!
+                </p>
+              </div>
+              <ul class="item__services">
+                <li class="service service--scissors">Стрижка</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <svg viewBox="0 0 320 34" class="bottom-border bottom-border--works"
+         preserveAspectRatio="none">
+          <polygon points="0,0 160,32 320,0 320,34 0,34" />
+        </svg>
+      </section>
+      <section class="pricelist">
+        <h2 class="pricelist__heading heading">Прейскурант</h2>
+        <table class="pricelist__table">
+          <tr class="table__row-1">
+            <td class="table__column-1">1</td>
+            <td class="table__column-2">
+              Классическая стрижка<br>
+              <span class="hidden-row">(с мытьём головы)</span>
+            </td>
+            <td class="table__column-3">с мытьём головы</td>
+            <td class="table__column-4">1 500 руб.</td>
+          </tr>
+          <tr class="table__row-2">
+            <td class="table__column-1">2</td>
+            <td class="table__column-2">
+              Современный вариант<br>
+              <span class="hidden-row">(с мытьём головы)</span>
+            </td>
+            <td class="table__column-3">с мытьём головы</td>
+            <td class="table__column-4">1 500 руб.</td>
+          </tr>
+          <tr class="table__row-3">
+            <td class="table__column-1">3</td>
+            <td class="table__column-2">
+              Индивидуальный подход<br>
+              <span class="hidden-row">(с мытьём головы)</span>
+            </td>
+            </td>
+            <td class="table__column-3">с мытьём головы</td>
+            <td class="table__column-4">2 000 руб.</td>
+          </tr>
+          <tr class="table__row-4">
+            <td class="table__column-1">4</td>
+            <td class="table__column-2">
+              Бритьё бороды<br>
+              <span class="hidden-row">(без мытья)</span>
+            </td>
+            </td>
+            <td class="table__column-3">без мытья</td>
+            <td class="table__column-4">500 руб.</td>
+          </tr>
+          <tr class="table__row-5">
+            <td class="table__column-1">5</td>
+            <td class="table__column-2">
+              Бритьё головы<br>
+              <span class="hidden-row">(с мытьём головы)</span>
+            </td>
+            </td>
+            <td class="table__column-3">с мытьём головы</td>
+            <td class="table__column-4">1 000 руб.</td>
+          </tr>
+        </table>
+        <div class="pricelist__time-sale">
+          C 10:00 до 14:00 скидка 20%
+        </div>
+        <svg class="bottom-border bottom-border--pricelist" viewBox="0 0 320 34"
+         preserveAspectRatio="none">
+          <polygon points="0,0 160,32 320,0 320,34 0,34" />
+        </svg>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer__contacts">
+        <h2 class="footer__contacts__heading">Барбершоп Бородинский</h2>
+        <p class="footer__contacts__adress">г.Москва, ул. Большая Конюшенная 19/8</p>
+        <p class="footer__contacts__number-prev">Тел.:</p>
+        <a class="footer__contacts__number button button--border" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="footer__developer">
+        <p class="footer__developer-text">Разработано по макету:</p>
+        <a class="footer__developer-link button button--border" href="https://htmlacademy.ru" target="_blank">Html Academy</a>
+      </div>
+      <ul class="footer__frendly-list">
+        <li class="frendly-list__item button--border"><a class="item--vk" href="https://vk.com" target="_blank">Вконтакте</a></li>
+        <li class="frendly-list__item button--border"><a class="item--youtube" href="https://www.youtube.com" target="_blank">Ютуб</a></li>
+        <li class="frendly-list__item button--border"><a class="item--telegram" href="https://web.telegram.org" target="_blank">Телеграм</a></li>
+      </ul>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/login-script.js"></script>
+    <script src="script/validityLogin-script.js"></script>
+  </body>
+</html>

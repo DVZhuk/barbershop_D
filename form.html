@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Запись на стрижку</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='preload' href='fonts/PTSans-Narrow.woff2' as='font' type="font/woff2" crossorigin>
+    <link rel='preload' href='fonts/PTSans-NarrowBold.woff2' as='font' type="font/woff2" crossorigin>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header class="header header--photo">
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="toggle-icon"></span>
+          <span class="vissually-hidden">Открыть меню</span>
+        </button>
+        <div class="container container--navigation">
+          <ul class="navigation__link">
+            <li class="navigation__link-item"><a href="index.html">Главная</a></li>
+            <li class="navigation__link-item"><a href="photo.html">Наши работы</a></li>
+            <li class="navigation__link-item item-current"><a href="#">Записаться</a></li>
+            <li class="navigation__link-item"><a href="#contact">Контакты</a></li>
+            <li class="navigation__link-item"><a href="https://htmlacademy.ru" target="_blank">HTML ACADEMY</a></li>
+          </ul>
+          <button class="navigation__login navigation__link-item">
+            <svg class="navigation__login-icon" width="16" height="16"
+            viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polygon
+            points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" />
+              <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" />
+            </svg>
+            Войти
+          </button>
+          <p class="admin-name admin-name--novisible">admin</p>
+        </div>
+      </nav>
+      <div class="logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="logo__image" src="img/logotype-mobile.svg" alt="Логотип" width="226px">
+        </picture>
+      </div>
+      <svg viewBox="0 0 320 34" class="bottom-border bottom-border--header"
+       preserveAspectRatio="none">
+        <polygon points="0,0 160,32 320,0 320,34 0,34" />
+      </svg>
+      <section class="login__form login__form--closed">
+        <h2 class="heading login__heading">Личный кабинет</h2>
+        <p class="login__text">Введите свой логин и пароль, чтобы войти</p>
+        <form class="login__order" action="/login" method="login">
+          <div class="login__input">
+            <input class="registration__text login__input-text" type="text" name="login" placeholder="Логин" minlength="5" maxlength="18">
+            <input class="registration__text login__input-text" type="password" name="password" placeholder="Пароль" minlength="8">
+          </div>
+          <div class="login__extra">
+            <input class="checkbox-input" type="checkbox" name="remember" id="remember">
+            <label class="login__check services__checkbox" for="remember">
+              Запомните меня
+              <div class="checkbox__mark"></div>
+            </label>
+            <a class="extra__forgot-password" href="#">Я забыл пароль!</a>
+          </div>
+          <div class="login__buttons">
+            <input class="login__button-log form-button" type="submit" name="log-in" value="Войти">
+            <button class="login__button-close" type="button" name="button">Закрыть</button>
+          </div>
+        </form>
+      </section>
+    </header>
+    <main>
+      <section class="registration">
+        <header class="works__header header--position">
+          <h2 class="registration__heading heading">Запись на стрижку</h2>
+          <a class="works__button button" href="index.html">На главную</a>
+        </header>
+        <form class="registration__order" action="/mail" method="post">
+          <div class="registration__name">
+            <input class="registration__text" type="text" name="lastname" placeholder="Фамилия" required>
+            <input class="registration__text" type="text" name="name" placeholder="Имя" required>
+            <input class="registration__text" type="text" name="father-name" placeholder="Отчество" required>
+          </div>
+          <div class="registration__contact">
+            <input class="registration__text" type="tel" name="number" placeholder="Контактный телефон" required>
+            <input class="registration__text text--margin" type="email" name="email" placeholder="Контактный e-mail" required>
+          </div>
+          <textarea class="registration__text text--extra-inform"
+          name="extra-inform" placeholder="Доп. информация для мастера"></textarea>
+          <div class="registration__model">
+            <h3 class="model__heading">Выберите модель бороды</h3>
+            <input class="model__radio-input" type="radio" name="model" value="admiral" id="admiral" checked>
+            <label class="model__radio radio--admiral" for="admiral" >
+              адмирал
+              <div class="model__img img--admiral">
+              </div>
+            </label>
+            <input class="model__radio-input" type="radio" name="model" value="logger" id="logger">
+            <label class="model__radio radio--logger" for="logger" >
+              лесоруб
+              <div class="model__img img--logger">
+              </div>
+            </label>
+            <input class="model__radio-input" type="radio" name="model" value="polar" id="polar">
+            <label class="model__radio radio--polar" for="polar">
+              полярник
+              <div class="model__img img--polar">
+              </div>
+            </label>
+            <input class="model__radio-input" type="radio" name="model" value="boyar" id="boyar">
+            <label class="model__radio radio--boyar" for="boyar">
+              боярин
+              <div class="model__img img--boyar">
+              </div>
+            </label>
+            <input class="model__radio-input" type="radio" name="model" value="sage" id="sage">
+            <label class="model__radio radio--sage" for="sage">
+              мудрец
+              <div class="model__img img--sage">
+              </div>
+            </label>
+            <div class="model__empty-space-childs">
+            </div>
+          </div>
+          <div class="registration__services">
+            <h3 class="model__heading heading--services">Дополнительные услуги</h3>
+            <input class="checkbox-input" type="checkbox" name="tint" id="tint">
+            <label class="services__checkbox checkbox--tint" for="tint">
+              Подкрасить бороду
+              <div class="checkbox__mark"></div>
+            </label>
+            <input class="checkbox-input" type="checkbox" name="twist" id="twist">
+            <label class="services__checkbox checkbox--twist" for="twist">
+              Накрутить усы
+              <div class="checkbox__mark"></div>
+            </label>
+            <input class="checkbox-input" type="checkbox" name="comb" id="comb">
+            <label class="services__checkbox checkbox--comb" for="comb">
+              Причесать бороду
+              <div class="checkbox__mark"></div>
+            </label>
+            <input class="checkbox-input" type="checkbox" name="trim" id="trim">
+            <label class="services__checkbox  checkbox--trim" for="trim">
+              Подровнять виски
+              <div class="checkbox__mark"></div>
+            </label>
+            <input class="checkbox-input" type="checkbox" name="remove" id="remove">
+            <label class="services__checkbox checkbox--remove" for="remove">
+              Убрать седину
+              <div class="checkbox__mark"></div>
+            </label>
+            <input class="checkbox-input" type="checkbox" name="polish" id="polish">
+            <label class="services__checkbox checkbox--polish" for="polish">
+              Отполировать лысину
+              <div class="checkbox__mark"></div>
+            </label>
+          </div>
+          <input class="registration__button form-button" type="submit" name="send" value="Отправить заявку">
+        </form>
+      </section>
+      <section class="pop-up">
+        <div class="pop-up__content">
+          <h3 class="pop-up__heading">Это успех!</h3>
+          <p class="pop-up__text">Ваша заявка отправлена.<br>Ожидайте,
+             мы свяжемся с вами как только будет минутка.
+           </p>
+          <button class="pop-up__button form-button" type="button" name="button">Закрыть окно</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer__contacts">
+        <h2 class="footer__contacts__heading">Барбершоп Бородинский</h2>
+        <p class="footer__contacts__adress">г.Москва, ул. Большая Конюшенная 19/8</p>
+        <p class="footer__contacts__number-prev">Тел.:</p>
+        <a class="footer__contacts__number button button--border" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="footer__developer">
+        <p class="footer__developer-text">Разработано по макету:</p>
+        <a class="footer__developer-link button button--border" href="https://htmlacademy.ru" target="_blank">Html Academy</a>
+      </div>
+      <ul class="footer__frendly-list">
+        <li class="frendly-list__item button--border"><a class="item--vk" href="https://vk.com" target="_blank">Вконтакте</a></li>
+        <li class="frendly-list__item button--border"><a class="item--youtube" href="https://www.youtube.com" target="_blank">Ютуб</a></li>
+        <li class="frendly-list__item button--border"><a class="item--telegram" href="https://web.telegram.org" target="_blank">Телеграм</a></li>
+      </ul>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/focus-script.js"></script>
+    <script src="script/login-script.js"></script>
+    <script src="script/validityLogin-script.js"></script>
+  </body>
+</html>
