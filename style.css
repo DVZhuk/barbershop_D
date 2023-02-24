@@ -91,7 +91,9 @@ body {
     line-height: 13px;
     font-weight: bold;
     text-transform: uppercase;
-    z-index: 15;
+    z-index: 2;
+    -webkit-transform: translate3d(0,0,1px);
+    transform: translate3d(0,0,1px);
   }
   .navigation__link {
     list-style: none;
@@ -116,7 +118,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 20;
+    z-index: 15;
     display: block;
     width: 70px;
     height: 51px;
@@ -213,6 +215,9 @@ body {
     flex-direction: column;
     min-width: 320px;
     overflow-x: clip;
+    z-index: 3;
+    -webkit-transform: translate3d(0,0,1px);
+    transform: translate3d(0,0,1px);
   }
   .navigation {
     position: relative;
@@ -2247,7 +2252,9 @@ section .news-reviews__reviews .swiper-pagination {
   top: 140px;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
+  -webkit-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
   padding: 37px 20px;
   font-family: 'PT Sans Narrow';
   font-style: normal;
