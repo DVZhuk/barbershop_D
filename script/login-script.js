@@ -11,16 +11,21 @@ const loginButton = document.querySelector(".navigation__login");
 const rememberMe = document.querySelector('.checkbox-input');
 
 let loginOn = false;
+let rememberCheckBox = false;
 
 loginOrder.addEventListener('submit', function (evt) {
     evt.preventDefault();
 
     if (inputPlaces[0].value === loginName && 
         inputPlaces[1].value === password) {
+            console.log('hello')
             login.classList.toggle("login__form--closed");
             userName.classList.toggle('admin-name--novisible');
             loginButton.lastChild.nodeValue = 'Выйти';
             loginOn = true;
+        if (rememberCheckBox) {
+            window.localStorage.setItem("login", "1");
+        }
     };
 });
 
@@ -34,10 +39,8 @@ loginButton.addEventListener('click', function() {
     };
 });
 
-rememberMe.addEventListener('input', function() {
-    if (rememberMe.checked) {
-        window.localStorage.setItem("login", "1");
-    };
+rememberMe.addEventListener('change', function() {
+    rememberCheckBox = !rememberCheckBox;
 });
 
 if (window.localStorage.getItem("login") === "1") {
