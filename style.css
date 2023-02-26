@@ -47,6 +47,8 @@ body {
 .form-button {
   border: none;
   border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
   background-color: #826550;
   color: #ffffff;
   text-transform: uppercase;
